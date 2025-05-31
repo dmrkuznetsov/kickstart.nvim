@@ -484,6 +484,18 @@ require('lazy').setup({
     end,
   },
 
+  {
+    'akinsho/git-conflict.nvim',
+    version = '*',
+    config = true,
+    -- co — choose ours
+    -- ct — choose theirs
+    -- cb — choose both
+    -- c0 — choose none
+    -- ]x — move to previous conflict
+    -- [x — move to next conflict
+  },
+
   -- LSP Plugins
   {
     -- `lazydev` configures Lua LSP for your Neovim config, runtime and plugins
