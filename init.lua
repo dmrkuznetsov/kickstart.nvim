@@ -478,6 +478,10 @@ require('lazy').setup({
       'echasnovski/mini.pick', -- optional
       'folke/snacks.nvim', -- optional
     },
+    config = function()
+      local neogit = require 'neogit'
+      vim.keymap.set('n', '<leader>git', neogit.open, { desc = '[O]pen [G]git' })
+    end,
   },
 
   -- LSP Plugins
