@@ -483,7 +483,9 @@ require('lazy').setup({
       vim.keymap.set('n', '<leader>git', neogit.open, { desc = '[O]pen [G]git' })
     end,
   },
-
+  {
+    'ThePrimeagen/vim-be-good',
+  },
   {
     'akinsho/git-conflict.nvim',
     version = '*',
