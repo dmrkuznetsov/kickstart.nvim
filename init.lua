@@ -498,6 +498,9 @@ require('lazy').setup({
     config = function()
       local neogit = require 'neogit'
       vim.keymap.set('n', '<leader>git', neogit.open, { desc = '[O]pen [G]git' })
+      vim.keymap.set('n', '<leader>gres', function()
+        neogit.open { 'reset' }
+      end, { desc = 'GitReset' })
     end,
   },
   {
