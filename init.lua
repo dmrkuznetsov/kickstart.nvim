@@ -480,6 +480,7 @@ require('lazy').setup({
     ---@type neotree.Config?
     opts = {
       -- fill any relevant options here
+      vim.keymap.set('n', '<leader>n', ':Neotree toggle<CR>'),
     },
   },
 
